@@ -67,7 +67,7 @@ def calculate_distance(wt, mut):
 def main(pdbid):
     sequence = []
 
-    with open(f"data/{pdbid}/{pdbid}.A.processed.pdb.knr", 'r') as file:
+    with open(f"../raw_data/{pdbid}/{pdbid}.A.processed.pdb.knr", 'r') as file:
         for line in list(file):
             if line.startswith("SEQRES"):
                 sequence += line.split()[4:]
@@ -75,7 +75,7 @@ def main(pdbid):
     final_json = {}
     final_json['pdbid'] = pdbid
 
-    final_json["basicStats"], final_json["clusterSizeDistribution"] = parse_metrics(f"data/{pdbid}/{pdbid}.A.processed.pdb_postPG_MetricsBBH.txt")
+    final_json["basicStats"], final_json["clusterSizeDistribution"] = parse_metrics(f"../raw_data/{pdbid}/{pdbid}.A.processed.pdb_postPG_MetricsBBH.txt")
     mutations = []
 
     for i, amino in enumerate(sequence):
@@ -83,19 +83,20 @@ def main(pdbid):
         row["index"] = i + 1
         row["aminoAcid"] = amino
         row["aminoAcidLetterCode"] = amino_acids[amino]
-        mutants = {}
+        mutants = []
         for acid in acid_string:
-            out, clusters = parse_metrics(f"data/{pdbid}/{pdbid}.AA{i + 1}{acid}.mut.out/{pdbid}.AA{i + 1}{acid}.processed.pdb_postPG_MetricsBBH.txt")
+            out, clusters = parse_metrics(f"../raw_data/{pdbid}/{pdbid}.AA{i + 1}{acid}.mut.out/{pdbid}.AA{i + 1}{acid}.processed.pdb_postPG_MetricsBBH.txt")
             item = {}
+            item['mutantAcid'] = acid
             item['rigidityDistance'] = calculate_distance(final_json["clusterSizeDistribution"], clusters)
             item["basicStats"] = out
             item["clusterSizeDistribution"] = clusters
-            mutants[acid] = item
+            mutants.append(item)
         row["mutants"] = mutants
         mutations.append(row)
     final_json["mutations"] = mutations
 
-    with open(f"{pdbid}.json", 'w') as file:
+    with open(f"../data/{pdbid}.json", 'w') as file:
         file.write(json.dumps(final_json, indent=4))
 
 

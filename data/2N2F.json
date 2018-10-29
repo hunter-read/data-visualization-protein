@@ -49,8 +49,9 @@
             "index": 1,
             "aminoAcid": "TYR",
             "aminoAcidLetterCode": "Y",
-            "mutants": {
-                "A": {
+            "mutants": [
+                {
+                    "mutantAcid": "A",
                     "rigidityDistance": -1,
                     "basicStats": {
                         "points": 234,
@@ -97,7 +98,8 @@
                         }
                     ]
                 },
-                "C": {
+                {
+                    "mutantAcid": "C",
                     "rigidityDistance": -4,
                     "basicStats": {
                         "points": 235,
@@ -144,7 +146,8 @@
                         }
                     ]
                 },
-                "D": {
+                {
+                    "mutantAcid": "D",
                     "rigidityDistance": 1,
                     "basicStats": {
                         "points": 236,
@@ -195,7 +198,8 @@
                         }
                     ]
                 },
-                "E": {
+                {
+                    "mutantAcid": "E",
                     "rigidityDistance": -6,
                     "basicStats": {
                         "points": 239,
@@ -242,7 +246,8 @@
                         }
                     ]
                 },
-                "F": {
+                {
+                    "mutantAcid": "F",
                     "rigidityDistance": -19,
                     "basicStats": {
                         "points": 244,
@@ -289,7 +294,8 @@
                         }
                     ]
                 },
-                "G": {
+                {
+                    "mutantAcid": "G",
                     "rigidityDistance": 4,
                     "basicStats": {
                         "points": 231,
@@ -336,7 +342,8 @@
                         }
                     ]
                 },
-                "H": {
+                {
+                    "mutantAcid": "H",
                     "rigidityDistance": -7,
                     "basicStats": {
                         "points": 240,
@@ -383,7 +390,8 @@
                         }
                     ]
                 },
-                "I": {
+                {
+                    "mutantAcid": "I",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 243,
@@ -430,7 +438,8 @@
                         }
                     ]
                 },
-                "K": {
+                {
+                    "mutantAcid": "K",
                     "rigidityDistance": -21,
                     "basicStats": {
                         "points": 246,
@@ -477,7 +486,8 @@
                         }
                     ]
                 },
-                "L": {
+                {
+                    "mutantAcid": "L",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 243,
@@ -524,7 +534,8 @@
                         }
                     ]
                 },
-                "M": {
+                {
+                    "mutantAcid": "M",
                     "rigidityDistance": -14,
                     "basicStats": {
                         "points": 241,
@@ -571,7 +582,8 @@
                         }
                     ]
                 },
-                "N": {
+                {
+                    "mutantAcid": "N",
                     "rigidityDistance": -7,
                     "basicStats": {
                         "points": 238,
@@ -618,7 +630,8 @@
                         }
                     ]
                 },
-                "P": {
+                {
+                    "mutantAcid": "P",
                     "rigidityDistance": -1,
                     "basicStats": {
                         "points": 238,
@@ -669,7 +682,8 @@
                         }
                     ]
                 },
-                "Q": {
+                {
+                    "mutantAcid": "Q",
                     "rigidityDistance": -12,
                     "basicStats": {
                         "points": 241,
@@ -716,7 +730,8 @@
                         }
                     ]
                 },
-                "R": {
+                {
+                    "mutantAcid": "R",
                     "rigidityDistance": -21,
                     "basicStats": {
                         "points": 248,
@@ -763,7 +778,8 @@
                         }
                     ]
                 },
-                "S": {
+                {
+                    "mutantAcid": "S",
                     "rigidityDistance": -4,
                     "basicStats": {
                         "points": 235,
@@ -810,7 +826,8 @@
                         }
                     ]
                 },
-                "T": {
+                {
+                    "mutantAcid": "T",
                     "rigidityDistance": -9,
                     "basicStats": {
                         "points": 238,
@@ -857,7 +874,8 @@
                         }
                     ]
                 },
-                "V": {
+                {
+                    "mutantAcid": "V",
                     "rigidityDistance": -11,
                     "basicStats": {
                         "points": 240,
@@ -904,7 +922,8 @@
                         }
                     ]
                 },
-                "W": {
+                {
+                    "mutantAcid": "W",
                     "rigidityDistance": -17,
                     "basicStats": {
                         "points": 248,
@@ -955,7 +974,8 @@
                         }
                     ]
                 },
-                "Y": {
+                {
+                    "mutantAcid": "Y",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 245,
@@ -1002,14 +1022,15 @@
                         }
                     ]
                 }
-            }
+            ]
         },
         {
             "index": 2,
             "aminoAcid": "GLY",
             "aminoAcidLetterCode": "G",
-            "mutants": {
-                "A": {
+            "mutants": [
+                {
+                    "mutantAcid": "A",
                     "rigidityDistance": -21,
                     "basicStats": {
                         "points": 248,
@@ -1056,7 +1077,8 @@
                         }
                     ]
                 },
-                "C": {
+                {
+                    "mutantAcid": "C",
                     "rigidityDistance": -24,
                     "basicStats": {
                         "points": 249,
@@ -1103,7 +1125,8 @@
                         }
                     ]
                 },
-                "D": {
+                {
+                    "mutantAcid": "D",
                     "rigidityDistance": -31,
                     "basicStats": {
                         "points": 250,
@@ -1150,7 +1173,8 @@
                         }
                     ]
                 },
-                "E": {
+                {
+                    "mutantAcid": "E",
                     "rigidityDistance": -30,
                     "basicStats": {
                         "points": 253,
@@ -1197,7 +1221,8 @@
                         }
                     ]
                 },
-                "F": {
+                {
+                    "mutantAcid": "F",
                     "rigidityDistance": -39,
                     "basicStats": {
                         "points": 258,
@@ -1244,7 +1269,8 @@
                         }
                     ]
                 },
-                "G": {
+                {
+                    "mutantAcid": "G",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 245,
@@ -1291,7 +1317,8 @@
                         }
                     ]
                 },
-                "H": {
+                {
+                    "mutantAcid": "H",
                     "rigidityDistance": -27,
                     "basicStats": {
                         "points": 254,
@@ -1338,7 +1365,8 @@
                         }
                     ]
                 },
-                "I": {
+                {
+                    "mutantAcid": "I",
                     "rigidityDistance": -36,
                     "basicStats": {
                         "points": 257,
@@ -1385,7 +1413,8 @@
                         }
                     ]
                 },
-                "K": {
+                {
+                    "mutantAcid": "K",
                     "rigidityDistance": -41,
                     "basicStats": {
                         "points": 260,
@@ -1432,7 +1461,8 @@
                         }
                     ]
                 },
-                "L": {
+                {
+                    "mutantAcid": "L",
                     "rigidityDistance": -42,
                     "basicStats": {
                         "points": 257,
@@ -1479,7 +1509,8 @@
                         }
                     ]
                 },
-                "M": {
+                {
+                    "mutantAcid": "M",
                     "rigidityDistance": -36,
                     "basicStats": {
                         "points": 255,
@@ -1530,7 +1561,8 @@
                         }
                     ]
                 },
-                "N": {
+                {
+                    "mutantAcid": "N",
                     "rigidityDistance": -33,
                     "basicStats": {
                         "points": 252,
@@ -1577,7 +1609,8 @@
                         }
                     ]
                 },
-                "P": {
+                {
+                    "mutantAcid": "P",
                     "rigidityDistance": -17,
                     "basicStats": {
                         "points": 252,
@@ -1632,7 +1665,8 @@
                         }
                     ]
                 },
-                "Q": {
+                {
+                    "mutantAcid": "Q",
                     "rigidityDistance": -32,
                     "basicStats": {
                         "points": 255,
@@ -1679,7 +1713,8 @@
                         }
                     ]
                 },
-                "R": {
+                {
+                    "mutantAcid": "R",
                     "rigidityDistance": -41,
                     "basicStats": {
                         "points": 262,
@@ -1726,7 +1761,8 @@
                         }
                     ]
                 },
-                "S": {
+                {
+                    "mutantAcid": "S",
                     "rigidityDistance": -34,
                     "basicStats": {
                         "points": 249,
@@ -1769,7 +1805,8 @@
                         }
                     ]
                 },
-                "T": {
+                {
+                    "mutantAcid": "T",
                     "rigidityDistance": -25,
                     "basicStats": {
                         "points": 252,
@@ -1816,7 +1853,8 @@
                         }
                     ]
                 },
-                "V": {
+                {
+                    "mutantAcid": "V",
                     "rigidityDistance": -23,
                     "basicStats": {
                         "points": 254,
@@ -1863,7 +1901,8 @@
                         }
                     ]
                 },
-                "W": {
+                {
+                    "mutantAcid": "W",
                     "rigidityDistance": -43,
                     "basicStats": {
                         "points": 262,
@@ -1914,7 +1953,8 @@
                         }
                     ]
                 },
-                "Y": {
+                {
+                    "mutantAcid": "Y",
                     "rigidityDistance": -42,
                     "basicStats": {
                         "points": 259,
@@ -1961,14 +2001,15 @@
                         }
                     ]
                 }
-            }
+            ]
         },
         {
             "index": 3,
             "aminoAcid": "GLY",
             "aminoAcidLetterCode": "G",
-            "mutants": {
-                "A": {
+            "mutants": [
+                {
+                    "mutantAcid": "A",
                     "rigidityDistance": -21,
                     "basicStats": {
                         "points": 248,
@@ -2015,7 +2056,8 @@
                         }
                     ]
                 },
-                "C": {
+                {
+                    "mutantAcid": "C",
                     "rigidityDistance": -30,
                     "basicStats": {
                         "points": 249,
@@ -2062,7 +2104,8 @@
                         }
                     ]
                 },
-                "D": {
+                {
+                    "mutantAcid": "D",
                     "rigidityDistance": -29,
                     "basicStats": {
                         "points": 250,
@@ -2105,7 +2148,8 @@
                         }
                     ]
                 },
-                "E": {
+                {
+                    "mutantAcid": "E",
                     "rigidityDistance": -26,
                     "basicStats": {
                         "points": 253,
@@ -2152,7 +2196,8 @@
                         }
                     ]
                 },
-                "F": {
+                {
+                    "mutantAcid": "F",
                     "rigidityDistance": -33,
                     "basicStats": {
                         "points": 258,
@@ -2199,7 +2244,8 @@
                         }
                     ]
                 },
-                "G": {
+                {
+                    "mutantAcid": "G",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 245,
@@ -2246,7 +2292,8 @@
                         }
                     ]
                 },
-                "H": {
+                {
+                    "mutantAcid": "H",
                     "rigidityDistance": -35,
                     "basicStats": {
                         "points": 254,
@@ -2297,7 +2344,8 @@
                         }
                     ]
                 },
-                "I": {
+                {
+                    "mutantAcid": "I",
                     "rigidityDistance": -36,
                     "basicStats": {
                         "points": 257,
@@ -2344,7 +2392,8 @@
                         }
                     ]
                 },
-                "K": {
+                {
+                    "mutantAcid": "K",
                     "rigidityDistance": -35,
                     "basicStats": {
                         "points": 260,
@@ -2391,7 +2440,8 @@
                         }
                     ]
                 },
-                "L": {
+                {
+                    "mutantAcid": "L",
                     "rigidityDistance": -36,
                     "basicStats": {
                         "points": 257,
@@ -2438,7 +2488,8 @@
                         }
                     ]
                 },
-                "M": {
+                {
+                    "mutantAcid": "M",
                     "rigidityDistance": -34,
                     "basicStats": {
                         "points": 255,
@@ -2485,7 +2536,8 @@
                         }
                     ]
                 },
-                "N": {
+                {
+                    "mutantAcid": "N",
                     "rigidityDistance": -27,
                     "basicStats": {
                         "points": 252,
@@ -2536,7 +2588,8 @@
                         }
                     ]
                 },
-                "P": {
+                {
+                    "mutantAcid": "P",
                     "rigidityDistance": -17,
                     "basicStats": {
                         "points": 252,
@@ -2587,7 +2640,8 @@
                         }
                     ]
                 },
-                "Q": {
+                {
+                    "mutantAcid": "Q",
                     "rigidityDistance": -36,
                     "basicStats": {
                         "points": 255,
@@ -2638,7 +2692,8 @@
                         }
                     ]
                 },
-                "R": {
+                {
+                    "mutantAcid": "R",
                     "rigidityDistance": -51,
                     "basicStats": {
                         "points": 262,
@@ -2685,7 +2740,8 @@
                         }
                     ]
                 },
-                "S": {
+                {
+                    "mutantAcid": "S",
                     "rigidityDistance": -24,
                     "basicStats": {
                         "points": 249,
@@ -2732,7 +2788,8 @@
                         }
                     ]
                 },
-                "T": {
+                {
+                    "mutantAcid": "T",
                     "rigidityDistance": -29,
                     "basicStats": {
                         "points": 252,
@@ -2779,7 +2836,8 @@
                         }
                     ]
                 },
-                "V": {
+                {
+                    "mutantAcid": "V",
                     "rigidityDistance": -31,
                     "basicStats": {
                         "points": 254,
@@ -2826,7 +2884,8 @@
                         }
                     ]
                 },
-                "W": {
+                {
+                    "mutantAcid": "W",
                     "rigidityDistance": -37,
                     "basicStats": {
                         "points": 262,
@@ -2877,7 +2936,8 @@
                         }
                     ]
                 },
-                "Y": {
+                {
+                    "mutantAcid": "Y",
                     "rigidityDistance": -36,
                     "basicStats": {
                         "points": 259,
@@ -2924,14 +2984,15 @@
                         }
                     ]
                 }
-            }
+            ]
         },
         {
             "index": 4,
             "aminoAcid": "PHE",
             "aminoAcidLetterCode": "F",
-            "mutants": {
-                "A": {
+            "mutants": [
+                {
+                    "mutantAcid": "A",
                     "rigidityDistance": -8,
                     "basicStats": {
                         "points": 235,
@@ -2974,7 +3035,8 @@
                         }
                     ]
                 },
-                "C": {
+                {
+                    "mutantAcid": "C",
                     "rigidityDistance": -7,
                     "basicStats": {
                         "points": 236,
@@ -3021,7 +3083,8 @@
                         }
                     ]
                 },
-                "D": {
+                {
+                    "mutantAcid": "D",
                     "rigidityDistance": 22,
                     "basicStats": {
                         "points": 237,
@@ -3068,7 +3131,8 @@
                         }
                     ]
                 },
-                "E": {
+                {
+                    "mutantAcid": "E",
                     "rigidityDistance": -21,
                     "basicStats": {
                         "points": 240,
@@ -3115,7 +3179,8 @@
                         }
                     ]
                 },
-                "F": {
+                {
+                    "mutantAcid": "F",
                     "rigidityDistance": -20,
                     "basicStats": {
                         "points": 245,
@@ -3158,7 +3223,8 @@
                         }
                     ]
                 },
-                "G": {
+                {
+                    "mutantAcid": "G",
                     "rigidityDistance": 1,
                     "basicStats": {
                         "points": 232,
@@ -3205,7 +3271,8 @@
                         }
                     ]
                 },
-                "H": {
+                {
+                    "mutantAcid": "H",
                     "rigidityDistance": -12,
                     "basicStats": {
                         "points": 241,
@@ -3256,7 +3323,8 @@
                         }
                     ]
                 },
-                "I": {
+                {
+                    "mutantAcid": "I",
                     "rigidityDistance": -19,
                     "basicStats": {
                         "points": 244,
@@ -3303,7 +3371,8 @@
                         }
                     ]
                 },
-                "K": {
+                {
+                    "mutantAcid": "K",
                     "rigidityDistance": -20,
                     "basicStats": {
                         "points": 247,
@@ -3350,7 +3419,8 @@
                         }
                     ]
                 },
-                "L": {
+                {
+                    "mutantAcid": "L",
                     "rigidityDistance": -23,
                     "basicStats": {
                         "points": 244,
@@ -3393,7 +3463,8 @@
                         }
                     ]
                 },
-                "M": {
+                {
+                    "mutantAcid": "M",
                     "rigidityDistance": -21,
                     "basicStats": {
                         "points": 242,
@@ -3436,7 +3507,8 @@
                         }
                     ]
                 },
-                "N": {
+                {
+                    "mutantAcid": "N",
                     "rigidityDistance": -10,
                     "basicStats": {
                         "points": 239,
@@ -3483,7 +3555,8 @@
                         }
                     ]
                 },
-                "P": {
+                {
+                    "mutantAcid": "P",
                     "rigidityDistance": 10,
                     "basicStats": {
                         "points": 239,
@@ -3530,7 +3603,8 @@
                         }
                     ]
                 },
-                "Q": {
+                {
+                    "mutantAcid": "Q",
                     "rigidityDistance": -15,
                     "basicStats": {
                         "points": 242,
@@ -3577,7 +3651,8 @@
                         }
                     ]
                 },
-                "R": {
+                {
+                    "mutantAcid": "R",
                     "rigidityDistance": -24,
                     "basicStats": {
                         "points": 249,
@@ -3624,7 +3699,8 @@
                         }
                     ]
                 },
-                "S": {
+                {
+                    "mutantAcid": "S",
                     "rigidityDistance": -9,
                     "basicStats": {
                         "points": 236,
@@ -3675,7 +3751,8 @@
                         }
                     ]
                 },
-                "T": {
+                {
+                    "mutantAcid": "T",
                     "rigidityDistance": -12,
                     "basicStats": {
                         "points": 239,
@@ -3722,7 +3799,8 @@
                         }
                     ]
                 },
-                "V": {
+                {
+                    "mutantAcid": "V",
                     "rigidityDistance": -14,
                     "basicStats": {
                         "points": 241,
@@ -3769,7 +3847,8 @@
                         }
                     ]
                 },
-                "W": {
+                {
+                    "mutantAcid": "W",
                     "rigidityDistance": -24,
                     "basicStats": {
                         "points": 249,
@@ -3816,7 +3895,8 @@
                         }
                     ]
                 },
-                "Y": {
+                {
+                    "mutantAcid": "Y",
                     "rigidityDistance": -19,
                     "basicStats": {
                         "points": 246,
@@ -3863,14 +3943,15 @@
                         }
                     ]
                 }
-            }
+            ]
         },
         {
             "index": 5,
             "aminoAcid": "LEU",
             "aminoAcidLetterCode": "L",
-            "mutants": {
-                "A": {
+            "mutants": [
+                {
+                    "mutantAcid": "A",
                     "rigidityDistance": -1,
                     "basicStats": {
                         "points": 236,
@@ -3917,7 +3998,8 @@
                         }
                     ]
                 },
-                "C": {
+                {
+                    "mutantAcid": "C",
                     "rigidityDistance": -4,
                     "basicStats": {
                         "points": 237,
@@ -3964,7 +4046,8 @@
                         }
                     ]
                 },
-                "D": {
+                {
+                    "mutantAcid": "D",
                     "rigidityDistance": 25,
                     "basicStats": {
                         "points": 238,
@@ -4011,7 +4094,8 @@
                         }
                     ]
                 },
-                "E": {
+                {
+                    "mutantAcid": "E",
                     "rigidityDistance": 8,
                     "basicStats": {
                         "points": 241,
@@ -4058,7 +4142,8 @@
                         }
                     ]
                 },
-                "F": {
+                {
+                    "mutantAcid": "F",
                     "rigidityDistance": -13,
                     "basicStats": {
                         "points": 246,
@@ -4105,7 +4190,8 @@
                         }
                     ]
                 },
-                "G": {
+                {
+                    "mutantAcid": "G",
                     "rigidityDistance": 0,
                     "basicStats": {
                         "points": 233,
@@ -4148,7 +4234,8 @@
                         }
                     ]
                 },
-                "H": {
+                {
+                    "mutantAcid": "H",
                     "rigidityDistance": -3,
                     "basicStats": {
                         "points": 242,
@@ -4195,7 +4282,8 @@
                         }
                     ]
                 },
-                "I": {
+                {
+                    "mutantAcid": "I",
                     "rigidityDistance": -18,
                     "basicStats": {
                         "points": 245,
@@ -4246,7 +4334,8 @@
                         }
                     ]
                 },
-                "K": {
+                {
+                    "mutantAcid": "K",
                     "rigidityDistance": -25,
                     "basicStats": {
                         "points": 248,
@@ -4289,7 +4378,8 @@
                         }
                     ]
                 },
-                "L": {
+                {
+                    "mutantAcid": "L",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 245,
@@ -4336,7 +4426,8 @@
                         }
                     ]
                 },
-                "M": {
+                {
+                    "mutantAcid": "M",
                     "rigidityDistance": -14,
                     "basicStats": {
                         "points": 243,
@@ -4383,7 +4474,8 @@
                         }
                     ]
                 },
-                "N": {
+                {
+                    "mutantAcid": "N",
                     "rigidityDistance": -11,
                     "basicStats": {
                         "points": 240,
@@ -4434,7 +4526,8 @@
                         }
                     ]
                 },
-                "P": {
+                {
+                    "mutantAcid": "P",
                     "rigidityDistance": 13,
                     "basicStats": {
                         "points": 240,
@@ -4481,7 +4574,8 @@
                         }
                     ]
                 },
-                "Q": {
+                {
+                    "mutantAcid": "Q",
                     "rigidityDistance": -12,
                     "basicStats": {
                         "points": 243,
@@ -4532,7 +4626,8 @@
                         }
                     ]
                 },
-                "R": {
+                {
+                    "mutantAcid": "R",
                     "rigidityDistance": -17,
                     "basicStats": {
                         "points": 250,
@@ -4579,7 +4674,8 @@
                         }
                     ]
                 },
-                "S": {
+                {
+                    "mutantAcid": "S",
                     "rigidityDistance": -4,
                     "basicStats": {
                         "points": 237,
@@ -4626,7 +4722,8 @@
                         }
                     ]
                 },
-                "T": {
+                {
+                    "mutantAcid": "T",
                     "rigidityDistance": -9,
                     "basicStats": {
                         "points": 240,
@@ -4673,7 +4770,8 @@
                         }
                     ]
                 },
-                "V": {
+                {
+                    "mutantAcid": "V",
                     "rigidityDistance": -11,
                     "basicStats": {
                         "points": 242,
@@ -4720,7 +4818,8 @@
                         }
                     ]
                 },
-                "W": {
+                {
+                    "mutantAcid": "W",
                     "rigidityDistance": -17,
                     "basicStats": {
                         "points": 250,
@@ -4771,7 +4870,8 @@
                         }
                     ]
                 },
-                "Y": {
+                {
+                    "mutantAcid": "Y",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 247,
@@ -4818,14 +4918,15 @@
                         }
                     ]
                 }
-            }
+            ]
         },
         {
             "index": 6,
             "aminoAcid": "ARG",
             "aminoAcidLetterCode": "R",
-            "mutants": {
-                "A": {
+            "mutants": [
+                {
+                    "mutantAcid": "A",
                     "rigidityDistance": 22,
                     "basicStats": {
                         "points": 231,
@@ -4876,7 +4977,8 @@
                         }
                     ]
                 },
-                "C": {
+                {
+                    "mutantAcid": "C",
                     "rigidityDistance": 19,
                     "basicStats": {
                         "points": 232,
@@ -4927,7 +5029,8 @@
                         }
                     ]
                 },
-                "D": {
+                {
+                    "mutantAcid": "D",
                     "rigidityDistance": -14,
                     "basicStats": {
                         "points": 233,
@@ -4970,7 +5073,8 @@
                         }
                     ]
                 },
-                "E": {
+                {
+                    "mutantAcid": "E",
                     "rigidityDistance": 13,
                     "basicStats": {
                         "points": 236,
@@ -5021,7 +5125,8 @@
                         }
                     ]
                 },
-                "F": {
+                {
+                    "mutantAcid": "F",
                     "rigidityDistance": 6,
                     "basicStats": {
                         "points": 241,
@@ -5068,7 +5173,8 @@
                         }
                     ]
                 },
-                "G": {
+                {
+                    "mutantAcid": "G",
                     "rigidityDistance": 27,
                     "basicStats": {
                         "points": 228,
@@ -5119,7 +5225,8 @@
                         }
                     ]
                 },
-                "H": {
+                {
+                    "mutantAcid": "H",
                     "rigidityDistance": 16,
                     "basicStats": {
                         "points": 237,
@@ -5166,7 +5273,8 @@
                         }
                     ]
                 },
-                "I": {
+                {
+                    "mutantAcid": "I",
                     "rigidityDistance": 3,
                     "basicStats": {
                         "points": 240,
@@ -5213,7 +5321,8 @@
                         }
                     ]
                 },
-                "K": {
+                {
+                    "mutantAcid": "K",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 243,
@@ -5260,7 +5369,8 @@
                         }
                     ]
                 },
-                "L": {
+                {
+                    "mutantAcid": "L",
                     "rigidityDistance": 7,
                     "basicStats": {
                         "points": 240,
@@ -5311,7 +5421,8 @@
                         }
                     ]
                 },
-                "M": {
+                {
+                    "mutantAcid": "M",
                     "rigidityDistance": -13,
                     "basicStats": {
                         "points": 238,
@@ -5354,7 +5465,8 @@
                         }
                     ]
                 },
-                "N": {
+                {
+                    "mutantAcid": "N",
                     "rigidityDistance": 2,
                     "basicStats": {
                         "points": 235,
@@ -5401,7 +5513,8 @@
                         }
                     ]
                 },
-                "P": {
+                {
+                    "mutantAcid": "P",
                     "rigidityDistance": 8,
                     "basicStats": {
                         "points": 235,
@@ -5452,7 +5565,8 @@
                         }
                     ]
                 },
-                "Q": {
+                {
+                    "mutantAcid": "Q",
                     "rigidityDistance": 7,
                     "basicStats": {
                         "points": 238,
@@ -5499,7 +5613,8 @@
                         }
                     ]
                 },
-                "R": {
+                {
+                    "mutantAcid": "R",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 245,
@@ -5550,7 +5665,8 @@
                         }
                     ]
                 },
-                "S": {
+                {
+                    "mutantAcid": "S",
                     "rigidityDistance": 1,
                     "basicStats": {
                         "points": 232,
@@ -5597,7 +5713,8 @@
                         }
                     ]
                 },
-                "T": {
+                {
+                    "mutantAcid": "T",
                     "rigidityDistance": -10,
                     "basicStats": {
                         "points": 235,
@@ -5644,7 +5761,8 @@
                         }
                     ]
                 },
-                "V": {
+                {
+                    "mutantAcid": "V",
                     "rigidityDistance": 8,
                     "basicStats": {
                         "points": 237,
@@ -5691,7 +5809,8 @@
                         }
                     ]
                 },
-                "W": {
+                {
+                    "mutantAcid": "W",
                     "rigidityDistance": 6,
                     "basicStats": {
                         "points": 245,
@@ -5742,7 +5861,8 @@
                         }
                     ]
                 },
-                "Y": {
+                {
+                    "mutantAcid": "Y",
                     "rigidityDistance": -15,
                     "basicStats": {
                         "points": 242,
@@ -5785,14 +5905,15 @@
                         }
                     ]
                 }
-            }
+            ]
         },
         {
             "index": 7,
             "aminoAcid": "ARG",
             "aminoAcidLetterCode": "R",
-            "mutants": {
-                "A": {
+            "mutants": [
+                {
+                    "mutantAcid": "A",
                     "rigidityDistance": 2,
                     "basicStats": {
                         "points": 231,
@@ -5843,7 +5964,8 @@
                         }
                     ]
                 },
-                "C": {
+                {
+                    "mutantAcid": "C",
                     "rigidityDistance": -11,
                     "basicStats": {
                         "points": 232,
@@ -5890,7 +6012,8 @@
                         }
                     ]
                 },
-                "D": {
+                {
+                    "mutantAcid": "D",
                     "rigidityDistance": -12,
                     "basicStats": {
                         "points": 233,
@@ -5937,7 +6060,8 @@
                         }
                     ]
                 },
-                "E": {
+                {
+                    "mutantAcid": "E",
                     "rigidityDistance": 19,
                     "basicStats": {
                         "points": 236,
@@ -5988,7 +6112,8 @@
                         }
                     ]
                 },
-                "F": {
+                {
+                    "mutantAcid": "F",
                     "rigidityDistance": -18,
                     "basicStats": {
                         "points": 241,
@@ -6031,7 +6156,8 @@
                         }
                     ]
                 },
-                "G": {
+                {
+                    "mutantAcid": "G",
                     "rigidityDistance": 7,
                     "basicStats": {
                         "points": 228,
@@ -6082,7 +6208,8 @@
                         }
                     ]
                 },
-                "H": {
+                {
+                    "mutantAcid": "H",
                     "rigidityDistance": -2,
                     "basicStats": {
                         "points": 237,
@@ -6129,7 +6256,8 @@
                         }
                     ]
                 },
-                "I": {
+                {
+                    "mutantAcid": "I",
                     "rigidityDistance": -21,
                     "basicStats": {
                         "points": 240,
@@ -6172,7 +6300,8 @@
                         }
                     ]
                 },
-                "K": {
+                {
+                    "mutantAcid": "K",
                     "rigidityDistance": -20,
                     "basicStats": {
                         "points": 243,
@@ -6215,7 +6344,8 @@
                         }
                     ]
                 },
-                "L": {
+                {
+                    "mutantAcid": "L",
                     "rigidityDistance": 11,
                     "basicStats": {
                         "points": 240,
@@ -6262,7 +6392,8 @@
                         }
                     ]
                 },
-                "M": {
+                {
+                    "mutantAcid": "M",
                     "rigidityDistance": -15,
                     "basicStats": {
                         "points": 238,
@@ -6309,7 +6440,8 @@
                         }
                     ]
                 },
-                "N": {
+                {
+                    "mutantAcid": "N",
                     "rigidityDistance": -6,
                     "basicStats": {
                         "points": 235,
@@ -6356,7 +6488,8 @@
                         }
                     ]
                 },
-                "P": {
+                {
+                    "mutantAcid": "P",
                     "rigidityDistance": -2,
                     "basicStats": {
                         "points": 235,
@@ -6403,7 +6536,8 @@
                         }
                     ]
                 },
-                "Q": {
+                {
+                    "mutantAcid": "Q",
                     "rigidityDistance": -11,
                     "basicStats": {
                         "points": 238,
@@ -6446,7 +6580,8 @@
                         }
                     ]
                 },
-                "R": {
+                {
+                    "mutantAcid": "R",
                     "rigidityDistance": -26,
                     "basicStats": {
                         "points": 245,
@@ -6489,7 +6624,8 @@
                         }
                     ]
                 },
-                "S": {
+                {
+                    "mutantAcid": "S",
                     "rigidityDistance": -5,
                     "basicStats": {
                         "points": 232,
@@ -6536,7 +6672,8 @@
                         }
                     ]
                 },
-                "T": {
+                {
+                    "mutantAcid": "T",
                     "rigidityDistance": -8,
                     "basicStats": {
                         "points": 235,
@@ -6579,7 +6716,8 @@
                         }
                     ]
                 },
-                "V": {
+                {
+                    "mutantAcid": "V",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 237,
@@ -6622,7 +6760,8 @@
                         }
                     ]
                 },
-                "W": {
+                {
+                    "mutantAcid": "W",
                     "rigidityDistance": -18,
                     "basicStats": {
                         "points": 245,
@@ -6673,7 +6812,8 @@
                         }
                     ]
                 },
-                "Y": {
+                {
+                    "mutantAcid": "Y",
                     "rigidityDistance": -17,
                     "basicStats": {
                         "points": 242,
@@ -6720,14 +6860,15 @@
                         }
                     ]
                 }
-            }
+            ]
         },
         {
             "index": 8,
             "aminoAcid": "ILE",
             "aminoAcidLetterCode": "I",
-            "mutants": {
-                "A": {
+            "mutants": [
+                {
+                    "mutantAcid": "A",
                     "rigidityDistance": -1,
                     "basicStats": {
                         "points": 236,
@@ -6774,7 +6915,8 @@
                         }
                     ]
                 },
-                "C": {
+                {
+                    "mutantAcid": "C",
                     "rigidityDistance": -4,
                     "basicStats": {
                         "points": 237,
@@ -6821,7 +6963,8 @@
                         }
                     ]
                 },
-                "D": {
+                {
+                    "mutantAcid": "D",
                     "rigidityDistance": -21,
                     "basicStats": {
                         "points": 238,
@@ -6864,7 +7007,8 @@
                         }
                     ]
                 },
-                "E": {
+                {
+                    "mutantAcid": "E",
                     "rigidityDistance": -18,
                     "basicStats": {
                         "points": 241,
@@ -6915,7 +7059,8 @@
                         }
                     ]
                 },
-                "F": {
+                {
+                    "mutantAcid": "F",
                     "rigidityDistance": -13,
                     "basicStats": {
                         "points": 246,
@@ -6962,7 +7107,8 @@
                         }
                     ]
                 },
-                "G": {
+                {
+                    "mutantAcid": "G",
                     "rigidityDistance": 4,
                     "basicStats": {
                         "points": 233,
@@ -7009,7 +7155,8 @@
                         }
                     ]
                 },
-                "H": {
+                {
+                    "mutantAcid": "H",
                     "rigidityDistance": -7,
                     "basicStats": {
                         "points": 242,
@@ -7056,7 +7203,8 @@
                         }
                     ]
                 },
-                "I": {
+                {
+                    "mutantAcid": "I",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 245,
@@ -7103,7 +7251,8 @@
                         }
                     ]
                 },
-                "K": {
+                {
+                    "mutantAcid": "K",
                     "rigidityDistance": -21,
                     "basicStats": {
                         "points": 248,
@@ -7150,7 +7299,8 @@
                         }
                     ]
                 },
-                "L": {
+                {
+                    "mutantAcid": "L",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 245,
@@ -7197,7 +7347,8 @@
                         }
                     ]
                 },
-                "M": {
+                {
+                    "mutantAcid": "M",
                     "rigidityDistance": -14,
                     "basicStats": {
                         "points": 243,
@@ -7244,7 +7395,8 @@
                         }
                     ]
                 },
-                "N": {
+                {
+                    "mutantAcid": "N",
                     "rigidityDistance": -7,
                     "basicStats": {
                         "points": 240,
@@ -7291,7 +7443,8 @@
                         }
                     ]
                 },
-                "P": {
+                {
+                    "mutantAcid": "P",
                     "rigidityDistance": 1,
                     "basicStats": {
                         "points": 240,
@@ -7338,7 +7491,8 @@
                         }
                     ]
                 },
-                "Q": {
+                {
+                    "mutantAcid": "Q",
                     "rigidityDistance": -12,
                     "basicStats": {
                         "points": 243,
@@ -7385,7 +7539,8 @@
                         }
                     ]
                 },
-                "R": {
+                {
+                    "mutantAcid": "R",
                     "rigidityDistance": -21,
                     "basicStats": {
                         "points": 250,
@@ -7432,7 +7587,8 @@
                         }
                     ]
                 },
-                "S": {
+                {
+                    "mutantAcid": "S",
                     "rigidityDistance": -4,
                     "basicStats": {
                         "points": 237,
@@ -7479,7 +7635,8 @@
                         }
                     ]
                 },
-                "T": {
+                {
+                    "mutantAcid": "T",
                     "rigidityDistance": -9,
                     "basicStats": {
                         "points": 240,
@@ -7530,7 +7687,8 @@
                         }
                     ]
                 },
-                "V": {
+                {
+                    "mutantAcid": "V",
                     "rigidityDistance": -11,
                     "basicStats": {
                         "points": 242,
@@ -7577,7 +7735,8 @@
                         }
                     ]
                 },
-                "W": {
+                {
+                    "mutantAcid": "W",
                     "rigidityDistance": -17,
                     "basicStats": {
                         "points": 250,
@@ -7628,7 +7787,8 @@
                         }
                     ]
                 },
-                "Y": {
+                {
+                    "mutantAcid": "Y",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 247,
@@ -7675,14 +7835,15 @@
                         }
                     ]
                 }
-            }
+            ]
         },
         {
             "index": 9,
             "aminoAcid": "ARG",
             "aminoAcidLetterCode": "R",
-            "mutants": {
-                "A": {
+            "mutants": [
+                {
+                    "mutantAcid": "A",
                     "rigidityDistance": -2,
                     "basicStats": {
                         "points": 231,
@@ -7729,7 +7890,8 @@
                         }
                     ]
                 },
-                "C": {
+                {
+                    "mutantAcid": "C",
                     "rigidityDistance": 21,
                     "basicStats": {
                         "points": 232,
@@ -7780,7 +7942,8 @@
                         }
                     ]
                 },
-                "D": {
+                {
+                    "mutantAcid": "D",
                     "rigidityDistance": 2,
                     "basicStats": {
                         "points": 233,
@@ -7823,7 +7986,8 @@
                         }
                     ]
                 },
-                "E": {
+                {
+                    "mutantAcid": "E",
                     "rigidityDistance": -19,
                     "basicStats": {
                         "points": 236,
@@ -7866,7 +8030,8 @@
                         }
                     ]
                 },
-                "F": {
+                {
+                    "mutantAcid": "F",
                     "rigidityDistance": -14,
                     "basicStats": {
                         "points": 241,
@@ -7913,7 +8078,8 @@
                         }
                     ]
                 },
-                "G": {
+                {
+                    "mutantAcid": "G",
                     "rigidityDistance": 3,
                     "basicStats": {
                         "points": 228,
@@ -7960,7 +8126,8 @@
                         }
                     ]
                 },
-                "H": {
+                {
+                    "mutantAcid": "H",
                     "rigidityDistance": -8,
                     "basicStats": {
                         "points": 237,
@@ -8007,7 +8174,8 @@
                         }
                     ]
                 },
-                "I": {
+                {
+                    "mutantAcid": "I",
                     "rigidityDistance": -11,
                     "basicStats": {
                         "points": 240,
@@ -8054,7 +8222,8 @@
                         }
                     ]
                 },
-                "K": {
+                {
+                    "mutantAcid": "K",
                     "rigidityDistance": -18,
                     "basicStats": {
                         "points": 243,
@@ -8105,7 +8274,8 @@
                         }
                     ]
                 },
-                "L": {
+                {
+                    "mutantAcid": "L",
                     "rigidityDistance": -15,
                     "basicStats": {
                         "points": 240,
@@ -8148,7 +8318,8 @@
                         }
                     ]
                 },
-                "M": {
+                {
+                    "mutantAcid": "M",
                     "rigidityDistance": -11,
                     "basicStats": {
                         "points": 238,
@@ -8199,7 +8370,8 @@
                         }
                     ]
                 },
-                "N": {
+                {
+                    "mutantAcid": "N",
                     "rigidityDistance": 0,
                     "basicStats": {
                         "points": 235,
@@ -8242,7 +8414,8 @@
                         }
                     ]
                 },
-                "P": {
+                {
+                    "mutantAcid": "P",
                     "rigidityDistance": 12,
                     "basicStats": {
                         "points": 235,
@@ -8289,7 +8462,8 @@
                         }
                     ]
                 },
-                "Q": {
+                {
+                    "mutantAcid": "Q",
                     "rigidityDistance": -7,
                     "basicStats": {
                         "points": 238,
@@ -8336,7 +8510,8 @@
                         }
                     ]
                 },
-                "R": {
+                {
+                    "mutantAcid": "R",
                     "rigidityDistance": -24,
                     "basicStats": {
                         "points": 245,
@@ -8387,7 +8562,8 @@
                         }
                     ]
                 },
-                "S": {
+                {
+                    "mutantAcid": "S",
                     "rigidityDistance": -5,
                     "basicStats": {
                         "points": 232,
@@ -8434,7 +8610,8 @@
                         }
                     ]
                 },
-                "T": {
+                {
+                    "mutantAcid": "T",
                     "rigidityDistance": -8,
                     "basicStats": {
                         "points": 235,
@@ -8477,7 +8654,8 @@
                         }
                     ]
                 },
-                "V": {
+                {
+                    "mutantAcid": "V",
                     "rigidityDistance": -10,
                     "basicStats": {
                         "points": 237,
@@ -8520,7 +8698,8 @@
                         }
                     ]
                 },
-                "W": {
+                {
+                    "mutantAcid": "W",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 245,
@@ -8567,7 +8746,8 @@
                         }
                     ]
                 },
-                "Y": {
+                {
+                    "mutantAcid": "Y",
                     "rigidityDistance": -17,
                     "basicStats": {
                         "points": 242,
@@ -8614,14 +8794,15 @@
                         }
                     ]
                 }
-            }
+            ]
         },
         {
             "index": 10,
             "aminoAcid": "PRO",
             "aminoAcidLetterCode": "P",
-            "mutants": {
-                "A": {
+            "mutants": [
+                {
+                    "mutantAcid": "A",
                     "rigidityDistance": -18,
                     "basicStats": {
                         "points": 241,
@@ -8664,7 +8845,8 @@
                         }
                     ]
                 },
-                "C": {
+                {
+                    "mutantAcid": "C",
                     "rigidityDistance": -21,
                     "basicStats": {
                         "points": 242,
@@ -8707,7 +8889,8 @@
                         }
                     ]
                 },
-                "D": {
+                {
+                    "mutantAcid": "D",
                     "rigidityDistance": -32,
                     "basicStats": {
                         "points": 243,
@@ -8750,7 +8933,8 @@
                         }
                     ]
                 },
-                "E": {
+                {
+                    "mutantAcid": "E",
                     "rigidityDistance": -27,
                     "basicStats": {
                         "points": 246,
@@ -8793,7 +8977,8 @@
                         }
                     ]
                 },
-                "F": {
+                {
+                    "mutantAcid": "F",
                     "rigidityDistance": -30,
                     "basicStats": {
                         "points": 251,
@@ -8836,7 +9021,8 @@
                         }
                     ]
                 },
-                "G": {
+                {
+                    "mutantAcid": "G",
                     "rigidityDistance": -13,
                     "basicStats": {
                         "points": 238,
@@ -8879,7 +9065,8 @@
                         }
                     ]
                 },
-                "H": {
+                {
+                    "mutantAcid": "H",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 247,
@@ -8926,7 +9113,8 @@
                         }
                     ]
                 },
-                "I": {
+                {
+                    "mutantAcid": "I",
                     "rigidityDistance": -33,
                     "basicStats": {
                         "points": 250,
@@ -8969,7 +9157,8 @@
                         }
                     ]
                 },
-                "K": {
+                {
+                    "mutantAcid": "K",
                     "rigidityDistance": -34,
                     "basicStats": {
                         "points": 253,
@@ -9012,7 +9201,8 @@
                         }
                     ]
                 },
-                "L": {
+                {
+                    "mutantAcid": "L",
                     "rigidityDistance": -33,
                     "basicStats": {
                         "points": 250,
@@ -9055,7 +9245,8 @@
                         }
                     ]
                 },
-                "M": {
+                {
+                    "mutantAcid": "M",
                     "rigidityDistance": -31,
                     "basicStats": {
                         "points": 248,
@@ -9098,7 +9289,8 @@
                         }
                     ]
                 },
-                "N": {
+                {
+                    "mutantAcid": "N",
                     "rigidityDistance": -28,
                     "basicStats": {
                         "points": 245,
@@ -9145,7 +9337,8 @@
                         }
                     ]
                 },
-                "P": {
+                {
+                    "mutantAcid": "P",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 245,
@@ -9192,7 +9385,8 @@
                         }
                     ]
                 },
-                "Q": {
+                {
+                    "mutantAcid": "Q",
                     "rigidityDistance": -29,
                     "basicStats": {
                         "points": 248,
@@ -9235,7 +9429,8 @@
                         }
                     ]
                 },
-                "R": {
+                {
+                    "mutantAcid": "R",
                     "rigidityDistance": -38,
                     "basicStats": {
                         "points": 255,
@@ -9278,7 +9473,8 @@
                         }
                     ]
                 },
-                "S": {
+                {
+                    "mutantAcid": "S",
                     "rigidityDistance": -25,
                     "basicStats": {
                         "points": 242,
@@ -9321,7 +9517,8 @@
                         }
                     ]
                 },
-                "T": {
+                {
+                    "mutantAcid": "T",
                     "rigidityDistance": -26,
                     "basicStats": {
                         "points": 245,
@@ -9364,7 +9561,8 @@
                         }
                     ]
                 },
-                "V": {
+                {
+                    "mutantAcid": "V",
                     "rigidityDistance": -28,
                     "basicStats": {
                         "points": 247,
@@ -9407,7 +9605,8 @@
                         }
                     ]
                 },
-                "W": {
+                {
+                    "mutantAcid": "W",
                     "rigidityDistance": -34,
                     "basicStats": {
                         "points": 255,
@@ -9454,7 +9653,8 @@
                         }
                     ]
                 },
-                "Y": {
+                {
+                    "mutantAcid": "Y",
                     "rigidityDistance": -33,
                     "basicStats": {
                         "points": 252,
@@ -9497,14 +9697,15 @@
                         }
                     ]
                 }
-            }
+            ]
         },
         {
             "index": 11,
             "aminoAcid": "LYS",
             "aminoAcidLetterCode": "K",
-            "mutants": {
-                "A": {
+            "mutants": [
+                {
+                    "mutantAcid": "A",
                     "rigidityDistance": 2,
                     "basicStats": {
                         "points": 233,
@@ -9555,7 +9756,8 @@
                         }
                     ]
                 },
-                "C": {
+                {
+                    "mutantAcid": "C",
                     "rigidityDistance": 1,
                     "basicStats": {
                         "points": 234,
@@ -9602,7 +9804,8 @@
                         }
                     ]
                 },
-                "D": {
+                {
+                    "mutantAcid": "D",
                     "rigidityDistance": 0,
                     "basicStats": {
                         "points": 235,
@@ -9649,7 +9852,8 @@
                         }
                     ]
                 },
-                "E": {
+                {
+                    "mutantAcid": "E",
                     "rigidityDistance": -5,
                     "basicStats": {
                         "points": 238,
@@ -9696,7 +9900,8 @@
                         }
                     ]
                 },
-                "F": {
+                {
+                    "mutantAcid": "F",
                     "rigidityDistance": -2,
                     "basicStats": {
                         "points": 243,
@@ -9747,7 +9952,8 @@
                         }
                     ]
                 },
-                "G": {
+                {
+                    "mutantAcid": "G",
                     "rigidityDistance": 9,
                     "basicStats": {
                         "points": 230,
@@ -9794,7 +10000,8 @@
                         }
                     ]
                 },
-                "H": {
+                {
+                    "mutantAcid": "H",
                     "rigidityDistance": 2,
                     "basicStats": {
                         "points": 239,
@@ -9845,7 +10052,8 @@
                         }
                     ]
                 },
-                "I": {
+                {
+                    "mutantAcid": "I",
                     "rigidityDistance": -11,
                     "basicStats": {
                         "points": 242,
@@ -9892,7 +10100,8 @@
                         }
                     ]
                 },
-                "K": {
+                {
+                    "mutantAcid": "K",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 245,
@@ -9939,7 +10148,8 @@
                         }
                     ]
                 },
-                "L": {
+                {
+                    "mutantAcid": "L",
                     "rigidityDistance": -11,
                     "basicStats": {
                         "points": 242,
@@ -9986,7 +10196,8 @@
                         }
                     ]
                 },
-                "M": {
+                {
+                    "mutantAcid": "M",
                     "rigidityDistance": -9,
                     "basicStats": {
                         "points": 240,
@@ -10033,7 +10244,8 @@
                         }
                     ]
                 },
-                "N": {
+                {
+                    "mutantAcid": "N",
                     "rigidityDistance": -2,
                     "basicStats": {
                         "points": 237,
@@ -10080,7 +10292,8 @@
                         }
                     ]
                 },
-                "P": {
+                {
+                    "mutantAcid": "P",
                     "rigidityDistance": 6,
                     "basicStats": {
                         "points": 237,
@@ -10127,7 +10340,8 @@
                         }
                     ]
                 },
-                "Q": {
+                {
+                    "mutantAcid": "Q",
                     "rigidityDistance": -7,
                     "basicStats": {
                         "points": 240,
@@ -10174,7 +10388,8 @@
                         }
                     ]
                 },
-                "R": {
+                {
+                    "mutantAcid": "R",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 247,
@@ -10221,7 +10436,8 @@
                         }
                     ]
                 },
-                "S": {
+                {
+                    "mutantAcid": "S",
                     "rigidityDistance": 1,
                     "basicStats": {
                         "points": 234,
@@ -10268,7 +10484,8 @@
                         }
                     ]
                 },
-                "T": {
+                {
+                    "mutantAcid": "T",
                     "rigidityDistance": 2,
                     "basicStats": {
                         "points": 237,
@@ -10315,7 +10532,8 @@
                         }
                     ]
                 },
-                "V": {
+                {
+                    "mutantAcid": "V",
                     "rigidityDistance": -6,
                     "basicStats": {
                         "points": 239,
@@ -10362,7 +10580,8 @@
                         }
                     ]
                 },
-                "W": {
+                {
+                    "mutantAcid": "W",
                     "rigidityDistance": -6,
                     "basicStats": {
                         "points": 247,
@@ -10413,7 +10632,8 @@
                         }
                     ]
                 },
-                "Y": {
+                {
+                    "mutantAcid": "Y",
                     "rigidityDistance": -5,
                     "basicStats": {
                         "points": 244,
@@ -10464,14 +10684,15 @@
                         }
                     ]
                 }
-            }
+            ]
         },
         {
             "index": 12,
             "aminoAcid": "LEU",
             "aminoAcidLetterCode": "L",
-            "mutants": {
-                "A": {
+            "mutants": [
+                {
+                    "mutantAcid": "A",
                     "rigidityDistance": -1,
                     "basicStats": {
                         "points": 236,
@@ -10518,7 +10739,8 @@
                         }
                     ]
                 },
-                "C": {
+                {
+                    "mutantAcid": "C",
                     "rigidityDistance": -4,
                     "basicStats": {
                         "points": 237,
@@ -10565,7 +10787,8 @@
                         }
                     ]
                 },
-                "D": {
+                {
+                    "mutantAcid": "D",
                     "rigidityDistance": -7,
                     "basicStats": {
                         "points": 238,
@@ -10616,7 +10839,8 @@
                         }
                     ]
                 },
-                "E": {
+                {
+                    "mutantAcid": "E",
                     "rigidityDistance": -10,
                     "basicStats": {
                         "points": 241,
@@ -10663,7 +10887,8 @@
                         }
                     ]
                 },
-                "F": {
+                {
+                    "mutantAcid": "F",
                     "rigidityDistance": -13,
                     "basicStats": {
                         "points": 246,
@@ -10710,7 +10935,8 @@
                         }
                     ]
                 },
-                "G": {
+                {
+                    "mutantAcid": "G",
                     "rigidityDistance": 4,
                     "basicStats": {
                         "points": 233,
@@ -10757,7 +10983,8 @@
                         }
                     ]
                 },
-                "H": {
+                {
+                    "mutantAcid": "H",
                     "rigidityDistance": -3,
                     "basicStats": {
                         "points": 242,
@@ -10808,7 +11035,8 @@
                         }
                     ]
                 },
-                "I": {
+                {
+                    "mutantAcid": "I",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 245,
@@ -10855,7 +11083,8 @@
                         }
                     ]
                 },
-                "K": {
+                {
+                    "mutantAcid": "K",
                     "rigidityDistance": -21,
                     "basicStats": {
                         "points": 248,
@@ -10902,7 +11131,8 @@
                         }
                     ]
                 },
-                "L": {
+                {
+                    "mutantAcid": "L",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 245,
@@ -10949,7 +11179,8 @@
                         }
                     ]
                 },
-                "M": {
+                {
+                    "mutantAcid": "M",
                     "rigidityDistance": -14,
                     "basicStats": {
                         "points": 243,
@@ -10996,7 +11227,8 @@
                         }
                     ]
                 },
-                "N": {
+                {
+                    "mutantAcid": "N",
                     "rigidityDistance": 3,
                     "basicStats": {
                         "points": 240,
@@ -11047,7 +11279,8 @@
                         }
                     ]
                 },
-                "P": {
+                {
+                    "mutantAcid": "P",
                     "rigidityDistance": 9,
                     "basicStats": {
                         "points": 240,
@@ -11098,7 +11331,8 @@
                         }
                     ]
                 },
-                "Q": {
+                {
+                    "mutantAcid": "Q",
                     "rigidityDistance": -4,
                     "basicStats": {
                         "points": 243,
@@ -11145,7 +11379,8 @@
                         }
                     ]
                 },
-                "R": {
+                {
+                    "mutantAcid": "R",
                     "rigidityDistance": -27,
                     "basicStats": {
                         "points": 250,
@@ -11192,7 +11427,8 @@
                         }
                     ]
                 },
-                "S": {
+                {
+                    "mutantAcid": "S",
                     "rigidityDistance": -4,
                     "basicStats": {
                         "points": 237,
@@ -11239,7 +11475,8 @@
                         }
                     ]
                 },
-                "T": {
+                {
+                    "mutantAcid": "T",
                     "rigidityDistance": -9,
                     "basicStats": {
                         "points": 240,
@@ -11286,7 +11523,8 @@
                         }
                     ]
                 },
-                "V": {
+                {
+                    "mutantAcid": "V",
                     "rigidityDistance": -11,
                     "basicStats": {
                         "points": 242,
@@ -11333,7 +11571,8 @@
                         }
                     ]
                 },
-                "W": {
+                {
+                    "mutantAcid": "W",
                     "rigidityDistance": -17,
                     "basicStats": {
                         "points": 250,
@@ -11384,7 +11623,8 @@
                         }
                     ]
                 },
-                "Y": {
+                {
+                    "mutantAcid": "Y",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 247,
@@ -11431,14 +11671,15 @@
                         }
                     ]
                 }
-            }
+            ]
         },
         {
             "index": 13,
             "aminoAcid": "LYS",
             "aminoAcidLetterCode": "K",
-            "mutants": {
-                "A": {
+            "mutants": [
+                {
+                    "mutantAcid": "A",
                     "rigidityDistance": 4,
                     "basicStats": {
                         "points": 233,
@@ -11485,7 +11726,8 @@
                         }
                     ]
                 },
-                "C": {
+                {
+                    "mutantAcid": "C",
                     "rigidityDistance": 1,
                     "basicStats": {
                         "points": 234,
@@ -11532,7 +11774,8 @@
                         }
                     ]
                 },
-                "D": {
+                {
+                    "mutantAcid": "D",
                     "rigidityDistance": -2,
                     "basicStats": {
                         "points": 235,
@@ -11583,7 +11826,8 @@
                         }
                     ]
                 },
-                "E": {
+                {
+                    "mutantAcid": "E",
                     "rigidityDistance": -11,
                     "basicStats": {
                         "points": 238,
@@ -11630,7 +11874,8 @@
                         }
                     ]
                 },
-                "F": {
+                {
+                    "mutantAcid": "F",
                     "rigidityDistance": -8,
                     "basicStats": {
                         "points": 243,
@@ -11681,7 +11926,8 @@
                         }
                     ]
                 },
-                "G": {
+                {
+                    "mutantAcid": "G",
                     "rigidityDistance": 5,
                     "basicStats": {
                         "points": 230,
@@ -11724,7 +11970,8 @@
                         }
                     ]
                 },
-                "H": {
+                {
+                    "mutantAcid": "H",
                     "rigidityDistance": 0,
                     "basicStats": {
                         "points": 239,
@@ -11779,7 +12026,8 @@
                         }
                     ]
                 },
-                "I": {
+                {
+                    "mutantAcid": "I",
                     "rigidityDistance": -13,
                     "basicStats": {
                         "points": 242,
@@ -11830,7 +12078,8 @@
                         }
                     ]
                 },
-                "K": {
+                {
+                    "mutantAcid": "K",
                     "rigidityDistance": -20,
                     "basicStats": {
                         "points": 245,
@@ -11881,7 +12130,8 @@
                         }
                     ]
                 },
-                "L": {
+                {
+                    "mutantAcid": "L",
                     "rigidityDistance": -13,
                     "basicStats": {
                         "points": 242,
@@ -11932,7 +12182,8 @@
                         }
                     ]
                 },
-                "M": {
+                {
+                    "mutantAcid": "M",
                     "rigidityDistance": -9,
                     "basicStats": {
                         "points": 240,
@@ -11979,7 +12230,8 @@
                         }
                     ]
                 },
-                "N": {
+                {
+                    "mutantAcid": "N",
                     "rigidityDistance": -2,
                     "basicStats": {
                         "points": 237,
@@ -12026,7 +12278,8 @@
                         }
                     ]
                 },
-                "P": {
+                {
+                    "mutantAcid": "P",
                     "rigidityDistance": 8,
                     "basicStats": {
                         "points": 237,
@@ -12073,7 +12326,8 @@
                         }
                     ]
                 },
-                "Q": {
+                {
+                    "mutantAcid": "Q",
                     "rigidityDistance": -9,
                     "basicStats": {
                         "points": 240,
@@ -12124,7 +12378,8 @@
                         }
                     ]
                 },
-                "R": {
+                {
+                    "mutantAcid": "R",
                     "rigidityDistance": -16,
                     "basicStats": {
                         "points": 247,
@@ -12171,7 +12426,8 @@
                         }
                     ]
                 },
-                "S": {
+                {
+                    "mutantAcid": "S",
                     "rigidityDistance": 7,
                     "basicStats": {
                         "points": 234,
@@ -12218,7 +12474,8 @@
                         }
                     ]
                 },
-                "T": {
+                {
+                    "mutantAcid": "T",
                     "rigidityDistance": -6,
                     "basicStats": {
                         "points": 237,
@@ -12269,7 +12526,8 @@
                         }
                     ]
                 },
-                "V": {
+                {
+                    "mutantAcid": "V",
                     "rigidityDistance": -8,
                     "basicStats": {
                         "points": 239,
@@ -12320,7 +12578,8 @@
                         }
                     ]
                 },
-                "W": {
+                {
+                    "mutantAcid": "W",
                     "rigidityDistance": -14,
                     "basicStats": {
                         "points": 247,
@@ -12375,7 +12634,8 @@
                         }
                     ]
                 },
-                "Y": {
+                {
+                    "mutantAcid": "Y",
                     "rigidityDistance": -17,
                     "basicStats": {
                         "points": 244,
@@ -12422,7 +12682,7 @@
                         }
                     ]
                 }
-            }
+            ]
         }
     ]
 }
