@@ -1,0 +1,296 @@
+[
+    {
+        "categorie": 2,
+        "values": [
+            {
+                "value": 5,
+                "rate": "Wild Type"
+            },
+            {
+                "value": 0,
+                "rate": "2: H -> A"
+            },
+            {
+                "value": 0,
+                "rate": "30: G -> R"
+            },
+            {
+                "value": 0,
+                "rate": "34: C -> H"
+            }
+        ]
+    },
+    {
+        "categorie": 3,
+        "values": [
+            {
+                "value": 24,
+                "rate": "Wild Type"
+            },
+            {
+                "value": 31,
+                "rate": "2: H -> A"
+            },
+            {
+                "value": 40,
+                "rate": "30: G -> R"
+            },
+            {
+                "value": 10,
+                "rate": "34: C -> H"
+            }
+        ]
+    },
+    {
+        "categorie": 4,
+        "values": [
+            {
+                "value": 3,
+                "rate": "Wild Type"
+            },
+            {
+                "value": 3,
+                "rate": "2: H -> A"
+            },
+            {
+                "value": 3,
+                "rate": "30: G -> R"
+            },
+            {
+                "value": 1,
+                "rate": "34: C -> H"
+            }
+        ]
+    },
+    {
+        "categorie": 5,
+        "values": [
+            {
+                "value": 94,
+                "rate": "Wild Type"
+            },
+            {
+                "value": 90,
+                "rate": "2: H -> A"
+            },
+            {
+                "value": 100,
+                "rate": "30: G -> R"
+            },
+            {
+                "value": 58,
+                "rate": "34: C -> H"
+            }
+        ]
+    },
+    {
+        "categorie": 6,
+        "values": [
+            {
+                "value": 33,
+                "rate": "Wild Type"
+            },
+            {
+                "value": 31,
+                "rate": "2: H -> A"
+            },
+            {
+                "value": 37,
+                "rate": "30: G -> R"
+            },
+            {
+                "value": 9,
+                "rate": "34: C -> H"
+            }
+        ]
+    },
+    {
+        "categorie": 7,
+        "values": [
+            {
+                "value": 0,
+                "rate": "Wild Type"
+            },
+            {
+                "value": 1,
+                "rate": "2: H -> A"
+            },
+            {
+                "value": 1,
+                "rate": "30: G -> R"
+            },
+            {
+                "value": 0,
+                "rate": "34: C -> H"
+            }
+        ]
+    },
+    {
+        "categorie": 11,
+        "values": [
+            {
+                "value": 1,
+                "rate": "Wild Type"
+            },
+            {
+                "value": 1,
+                "rate": "2: H -> A"
+            },
+            {
+                "value": 3,
+                "rate": "30: G -> R"
+            },
+            {
+                "value": 1,
+                "rate": "34: C -> H"
+            }
+        ]
+    },
+    {
+        "categorie": 12,
+        "values": [
+            {
+                "value": 4,
+                "rate": "Wild Type"
+            },
+            {
+                "value": 4,
+                "rate": "2: H -> A"
+            },
+            {
+                "value": 4,
+                "rate": "30: G -> R"
+            },
+            {
+                "value": 3,
+                "rate": "34: C -> H"
+            }
+        ]
+    },
+    {
+        "categorie": 13,
+        "values": [
+            {
+                "value": 1,
+                "rate": "Wild Type"
+            },
+            {
+                "value": 0,
+                "rate": "2: H -> A"
+            },
+            {
+                "value": 0,
+                "rate": "30: G -> R"
+            },
+            {
+                "value": 0,
+                "rate": "34: C -> H"
+            }
+        ]
+    },
+    {
+        "categorie": 18,
+        "values": [
+            {
+                "value": 0,
+                "rate": "Wild Type"
+            },
+            {
+                "value": 1,
+                "rate": "2: H -> A"
+            },
+            {
+                "value": 0,
+                "rate": "30: G -> R"
+            },
+            {
+                "value": 0,
+                "rate": "34: C -> H"
+            }
+        ]
+    },
+    {
+        "categorie": 19,
+        "values": [
+            {
+                "value": 1,
+                "rate": "Wild Type"
+            },
+            {
+                "value": 1,
+                "rate": "2: H -> A"
+            },
+            {
+                "value": 1,
+                "rate": "30: G -> R"
+            },
+            {
+                "value": 1,
+                "rate": "34: C -> H"
+            }
+        ]
+    },
+    {
+        "categorie": 27,
+        "values": [
+            {
+                "value": 1,
+                "rate": "Wild Type"
+            },
+            {
+                "value": 0,
+                "rate": "2: H -> A"
+            },
+            {
+                "value": 0,
+                "rate": "30: G -> R"
+            },
+            {
+                "value": 0,
+                "rate": "34: C -> H"
+            }
+        ]
+    },
+    {
+        "categorie": 34,
+        "values": [
+            {
+                "value": 0,
+                "rate": "Wild Type"
+            },
+            {
+                "value": 1,
+                "rate": "2: H -> A"
+            },
+            {
+                "value": 0,
+                "rate": "30: G -> R"
+            },
+            {
+                "value": 0,
+                "rate": "34: C -> H"
+            }
+        ]
+    },
+    {
+        "categorie": 269,
+        "values": [
+            {
+                "value": 0,
+                "rate": "Wild Type"
+            },
+            {
+                "value": 0,
+                "rate": "2: H -> A"
+            },
+            {
+                "value": 0,
+                "rate": "30: G -> R"
+            },
+            {
+                "value": 1,
+                "rate": "34: C -> H"
+            }
+        ]
+    }
+]

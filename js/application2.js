@@ -340,103 +340,94 @@ const qualitativeColors = [
   "#000", "#1f78b4", "#33a02c", "#e31a1c", "#ff7f00", "#6a3d9a", "#b15928",
   "#a6cee3", "#b2df8a", "#fb9a99", "#fdbf6f", "#cab2d6", "#ffff99"
 ];
+//set the dimensions of the canvas
 
-const barMargin = {top: 20, right: 20, bottom: 30, left: 40};
-const barWidth = 1200 - margin.left - margin.right;
-const barHeight = 1650 - margin.top - margin.bottom;
+const marginBar = {top: 20, right: 20, bottom: 30, left: 40};
+const widthBar = 960 - margin.left - margin.right;
+const heightBar = 500 - margin.top - margin.bottom;
 
-const x0bar = d3.scale.ordinal()
-    .rangeRoundBands([0, barWidth], 0.1);
-
-const x1bar = d3.scale.ordinal();
-
-const ybar = d3.scale.linear()
-    .range([height, 0]);
+const x0Bar = d3.scale.ordinal().rangeRoundBands([0, widthBar], 0.1);
+const x1Bar = d3.scale.ordinal();
+const yBar = d3.scale.linear().range([heightBar, 0]);
 
 const xAxisBar = d3.svg.axis()
-    .scale(x0bar)
-    .tickSize(0)
-    .orient("bottom");
+  .scale(x0Bar)
+  .tickSize(0)
+  .orient("bottom");
 
 const yAxisBar = d3.svg.axis()
-    .scale(ybar)
-    .orient("left");
+  .scale(yBar)
+  .orient("left");
 
-const color = d3.scale.ordinal()
-    .range(["#000", "#ffff99", "#e31a1c", "#1f78b4"]);
+const colorsBar = d3.scale.ordinal()
+    .range(qualitativeColors);
 
 const svgBar = d3.select('#bar-chart').append("svg")
-    .attr("width", barWidth + barMargin.left + barMargin.right)
-    .attr("height", barHeight + barMargin.top + barMargin.bottom)
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
   .append("g")
-    .attr("transform", "translate(" + barMargin.left + "," + barMargin.top + ")");
+    .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
-d3.json("data/data.json", function(err, data) {
-  if(err) console.log(err);
-  var categoriesNames = data.map(function(d) { return d.categorie; });
-  var rateNames = data[0].values.map(function(d) { return d.rate; });
+x0Bar.domain(clusterDistribution);
+x1Bar.domain(mutations).rangeRoundBands([0, x0Bar.rangeBand()]);
+yBar.domain([0, d3.max(clusterDistribution, (d) => d3.max(d, (k) => k.count))]);
 
-  x0bar.domain(categoriesNames);
-  x1bar.domain(rateNames).rangeRoundBands([0, x0bar.rangeBand()]);
-  ybar.domain([0, d3.max(data, function(categorie) { return d3.max(categorie.values, function(d) { return d.value; }); })]);
-
-  svgBar.append("g")
-      .attr("class", "x axis")
-      .attr("transform", "translate(0," + barHeight + ")")
-      .call(xAxisBar)
-    .append("text")
-      .attr("x", barWidth)
-      .attr("y", 12)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .style('font-weight','bold')
-      .text("Cluster Size");
-
-
-  svgBar.append("g")
-      .attr("class", "y axis")
-      .call(yAxisBar)
+svgBar.append("g")
+    .attr("class", "x axis")
+    .attr("transform", `translate(0, ${heightBar})`)
+    .call(xAxisBar)
   .append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .style('font-weight','bold')
-      .text("Cluster Counts");
+    .attr("x", widthBar)
+    .attr("dy", ".71em")
+    .style("text-anchor", "end")
+    .style('font-weight','bold')
+    .text("Cluster Size");
 
 
-  var slice = svgBar.selectAll(".slice")
-      .data(data)
-      .enter().append("g")
-      .attr("class", "g")
-      .attr("transform",function(d) { return "translate(" + x0bar(d.categorie) + ",0)"; });
+svgBar.append("g")
+    .attr("class", "y axis")
+    .call(yAxisBar)
+.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 6)
+    .attr("dy", ".71em")
+    .style("text-anchor", "end")
+    .style('font-weight','bold')
+    .text("Cluster Counts");
 
-  slice.selectAll("rect")
-      .data(function(d) { return d.values; })
-  .enter().append("rect")
-      .attr("width", x1bar.rangeBand())
-      .attr("x", function(d) { return x1bar(d.rate); })
-      .style("fill", function(d) { return color(d.rate); })
-      .attr("y", function(d) { return ybar(d.value); })
-      .attr("height", function(d) { return barHeight - ybar(d.value); });
+const slice = svgBar.selectAll(".slice")
+    .data(clusterDistribution)
+    .enter().append("g")
+    .attr("class", "g")
+    .attr("transform", (d, i) => `translate(${x0Bar(i)}, 0)`);
 
-  //Legend
-  var legend = svgBar.selectAll(".legend")
-      .data(data[0].values.map(function(d) { return d.rate; }).reverse())
-  .enter().append("g")
-      .attr("class", "legend")
-      .attr("transform", function(d,i) { return "translate(0," + i * 20 + ")"; });
+slice.selectAll("rect")
+    .data((d) => d.count)
+.enter().append("rect")
+    .attr("width", x1Bar.rangeBand())
+    .attr("x", (d) => x1Bar(d.size))
+    .style("fill", (d, i) => qualitativeColors[i])
+    .attr("y", (d) => yBar(0))
+    .attr("height", (d) => heightBar - yBar(0));
 
-  legend.append("rect")
-      .attr("x", barWidth - 18)
-      .attr("width", 18)
-      .attr("height", 18)
-      .style("fill", function(d) { return color(d); });
+//Legend
+const legendBar = svgBar.selectAll(".legend")
+    .data(mutations)
+.enter().append("g")
+    .attr("class", "legend")
+    .attr("transform", (d, i) => `translate(0, ${i * 20})`);
 
-  legend.append("text")
-      .attr("x", barWidth - 24)
-      .attr("y", 9)
-      .attr("dy", ".35em")
-      .style("text-anchor", "end")
-      .text(function(d) {return d; });
-});
+legendBar.append("rect")
+    .attr("x", widthBar - 18)
+    .attr("width", 18)
+    .attr("height", 18)
+    .style("fill", (d, i) => qualitativeColors[i]);
+
+legendBar.append("text")
+    .attr("x", widthBar - 24)
+    .attr("y", 9)
+    .attr("dy", ".35em")
+    .style("text-anchor", "end")
+    .text((d) => d);
+
+console.log(clusterDistribution);
