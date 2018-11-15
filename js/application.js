@@ -6,9 +6,31 @@ if (!pdbid) {
   pdbid = "1KJ5";
 }
 
+let protein;
 let heatmapData = [];
+let barchartData = {
+  mutation: [],
+  sizes: [],
+  counts: []
+};
+
+function addBarchartData(clusterSizeDistribution, mutationName) {
+  let size = [];
+  let count = [];
+  clusterSizeDistribution.forEach((d) => {
+    size.push(d.size);
+    count.push(d.count);
+  });
+  barchartData.mutation.push(mutationName);
+  barchartData.sizes.push(size);
+  barchartData.counts.push(count);
+  console.log(barchartData)
+}
+
+
 
 d3.json(`data/${pdbid}.json`, (data) => {
+  protein = data;
   data.mutations.forEach((d) => {
     heatmapData.push(d.mutants.map((m) => {
       if (m.mutantAcid === d.aminoAcidLetterCode) {
@@ -17,11 +39,15 @@ d3.json(`data/${pdbid}.json`, (data) => {
       return {
         rigidityDistance: m.rigidityDistance,
         avgClusterSize: m.basicStats.avgClusterSize,
-        largestCluster: m.basicStats.largestCluster
+        largestCluster: m.basicStats.largestCluster,
+        clusterSizeDistribution: m.clusterSizeDistribution,
       };
     }));
   });
-  console.log(heatmapData);
+  let wildTypeSize = [];
+  let wildTypeCount = [];
+
+  addBarchartData(data.clusterSizeDistribution, "Wild Type");
   heatmap();
 });
 
@@ -67,7 +93,7 @@ function heatmap() {
   const low_color = "#e5f5f9";
   const mid_color = "#99d8c9";
   const high_color = "#2ca25f";
-  const black = "#888";
+  const black = "#000";
   const white = "#fff";
 
   const x = d3.scale.ordinal().rangeBands([0, width]);
@@ -236,10 +262,14 @@ function heatmap() {
             .style("top", (d3.event.pageY - 28) + "px");
         }
       })
-      .on("mouseout", function(d) {
+      .on("mouseout", (d) =>  {
           tooltip.transition()
               .duration(500)
               .style("opacity", 0);
+      })
+      .on("click", (d, i) => {
+        let index = rowObject.indexOf(null);
+        addBarchartData(d.clusterSizeDistribution, `Amino Acid ${idx + 1}: Mutation ${acid_labels[index]} -> ${acid_labels[i]}`);
       });
   }
 
@@ -256,8 +286,7 @@ function heatmap() {
 
   let min = d3.min(heatmapData, (d) => d3.min(d, (k) => k ? k.rigidityDistance : Infinity));
   let max = d3.max(heatmapData, (d) => d3.max(d, (k) => k ? k.rigidityDistance : -Infinity));
-  console.log(min);
-  console.log(max);
+
   c.domain([min, 0, max]);
   x.domain(d3.range(xLen));
   y.domain(d3.range(yLen));
