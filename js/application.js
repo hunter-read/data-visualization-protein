@@ -8,6 +8,7 @@ if (!pdbid) {
 
 let protein;
 let heatmapData = [];
+let wtData = {};
 let barchartData = {
   mutation: [],
   sizes: [],
@@ -31,6 +32,7 @@ function addBarchartData(clusterSizeDistribution, mutationName) {
 
 d3.json(`data/${pdbid}.json`, (data) => {
   protein = data;
+  wtData = data.basicStats;
   data.mutations.forEach((d) => {
     heatmapData.push(d.mutants.map((m) => {
       if (m.mutantAcid === d.aminoAcidLetterCode) {
@@ -41,6 +43,12 @@ d3.json(`data/${pdbid}.json`, (data) => {
         avgClusterSize: m.basicStats.avgClusterSize,
         largestCluster: m.basicStats.largestCluster,
         clusterSizeDistribution: m.clusterSizeDistribution,
+        points: m.basicStats.points,
+        freePoints: m.basicStats.freePoints,
+        hinges: m.basicStats.hinges,
+        bars: m.basicStats.bars,
+        bodies: m.basicStats.bodies,
+        dofs: m.basicStats.dofs,
       };
     }));
   });
@@ -52,8 +60,8 @@ d3.json(`data/${pdbid}.json`, (data) => {
 });
 
 function heatmap() {
-  const width = 800;
-  const height = 80 + 40 * heatmapData.length;
+  let width = 800;
+  let height = 40 * heatmapData.length;
   const margin = {
     top: 120,
     right: 0,
@@ -61,7 +69,7 @@ function heatmap() {
     left: 80
   };
 
-  const acid_labels = [
+  let acid_labels = [
     "ALA (A)",
     "CYS (C)",
     "ASP (D)",
@@ -96,6 +104,13 @@ function heatmap() {
   const black = "#000";
   const white = "#fff";
 
+  let removedRowCount = 0;
+  let removedColumnCount = 0;
+  let rowLabels = [];
+  for (let i = 0; i < heatmapData.length; i++) {
+    rowLabels.push(`${i + 1}`);
+  }
+
   const x = d3.scale.ordinal().rangeBands([0, width]);
   const y = d3.scale.ordinal().rangeBands([0, height]);
 
@@ -103,11 +118,19 @@ function heatmap() {
   const c = d3.scale.linear().range([unstable_color, middle_color, stable_color]);
 
   //options nemu
+  let selectedOptionTitle = "Rigidity Distance"
   let selected_option = "rigidityDistance";
   const options_data = {
     "Rigidity Distance": "rigidityDistance",
     "Average Cluster Size": "avgClusterSize",
-    "Largest Cluster": "largestCluster"
+    "Largest Cluster": "largestCluster",
+    "Points": "points",
+    "Free Points": "freePoints",
+    "Hinges": "hinges",
+    "Bars": "bars",
+    "Bodies": "bodies",
+    "Degrees of Freedom": "dofs"
+
   };
 
   const select = d3.select('#options-menu')
@@ -122,7 +145,8 @@ function heatmap() {
   		.text((d) => d);
 
   function onOptionChange() {
-  	selected_option = options_data[d3.select('select').property('value')]
+    selectedOptionTitle = d3.select('select').property('value');
+  	selected_option = options_data[selectedOptionTitle];
   	updateHeatmap();
   }
 
@@ -177,20 +201,31 @@ function heatmap() {
     .style("fill", "url(#heatmap-gradient)")
     .attr("transform", `translate(${margin.left}, 0)`);
 
+  let minRD = d3.min(heatmapData, (d) => d3.min(d, (k) => k ? k.rigidityDistance : Infinity));
+  let maxRD = d3.max(heatmapData, (d) => d3.max(d, (k) => k ? k.rigidityDistance : -Infinity));
+
   const rightLegendText = legend.append("text")
     .attr("class", "legendText")
     .attr("text-anchor", "end")
     .attr("y", legendHeight - 5)
     .attr("x", legendWidth - margin.right - 10)
     .style("fill", black)
-    .text("Stable");
+    .text(`Stable: ${maxRD}`);
+
+  const midLegendText = legend.append("text")
+    .attr("class", "legendText")
+    .attr("text-anchor", "end")
+    .attr("y", legendHeight - 5)
+    .attr("x", width / 2 + margin.left + 10)
+    .style("fill", black)
+    .text("WT: 0");
 
   const leftLegendText = legend.append("text")
     .attr("class", "legendText")
     .attr("y", legendHeight - 5)
     .attr("x", margin.left + 10)
     .style("fill", white)
-    .text("Unstable");
+    .text(`Unstable: ${minRD}`);
 
   const tooltip = d3.select("body").append("div")
       .attr("class", "tooltip")
@@ -203,10 +238,10 @@ function heatmap() {
     if (selected_option === "rigidityDistance") {
       c.range([unstable_color, middle_color, stable_color]).domain([min, 0, max]);
 
-      leftLegendText.style("fill", white)
-        .text("Unstable");
-      rightLegendText.style("fill", black)
-        .text("Stable");
+      leftLegendText.style("fill", white).text(`Unstable: ${min}`);
+      rightLegendText.style("fill", black).text(`Stable: ${max}`);
+      midLegendText.style("fill", black)
+        .text("WT: 0");
 
       leftGradient.attr("stop-color", unstable_color);
       midGradient.attr("stop-color", middle_color);
@@ -218,6 +253,8 @@ function heatmap() {
         .text(min);
       rightLegendText.style("fill", white)
         .text(max);
+      midLegendText.style("fill", black)
+        .text(`WT: ${wtData[selected_option]}`);
 
       leftGradient.attr("stop-color", low_color);
       midGradient.attr("stop-color", mid_color);
@@ -226,8 +263,6 @@ function heatmap() {
     svg.selectAll(".row")
       .data(heatmapData)
       .each(rowFuncUpdate);
-
-    leftLegendText.text(min);
   }
 
   function rowFuncUpdate(rowObject) {
@@ -242,6 +277,7 @@ function heatmap() {
       .data(rowObject)
       .enter().append("rect")
       .attr("class", "cell")
+      .attr("id", (d, i) => `cell-${i}`)
       .attr("x", (d, i) => x(i))
       .attr("width", x.rangeBand())
       .attr("height", y.rangeBand())
@@ -252,8 +288,8 @@ function heatmap() {
             .duration(200)
             .style("opacity", 0.9);
         if (d) {
-          tooltip.html(`Amino Acid ${idx + 1}<br/>From ${acid_labels[index]} to ${acid_labels[i]}<br\>
-            Rigidity Distance: ${d.rigidityDistance}<br/>Average Cluster Size: ${d.avgClusterSize}<br/>Largest Cluster: ${d.largestCluster}`)
+
+          tooltip.html(`Amino Acid ${idx + 1}<br/>From ${acid_labels[index]} to ${acid_labels[i]}<br\>${selected_option == 'rigidityDistance' ? "<br\>" : ""}Rigidity Distance: ${d.rigidityDistance}<br/><br/>${selected_option == 'rigidityDistance' ? "" : selectedOptionTitle + ": " + d[selected_option]}`)
             .style("left", (d3.event.pageX) + "px")
             .style("top", (d3.event.pageY - 28) + "px");
         } else {
@@ -291,7 +327,7 @@ function heatmap() {
   x.domain(d3.range(xLen));
   y.domain(d3.range(yLen));
 
-  svg.append("rect")
+  const rect = svg.append("rect")
         .attr("class", "background")
         .attr("width", width)
         .attr("height", height)
@@ -301,6 +337,7 @@ function heatmap() {
     .data(heatmapData)
     .enter().append("g")
     .attr("class", "row")
+    .attr("id", (d, i) => `row-${i}`)
     .attr("transform", (d, i) => `translate(0, ${y(i)})`)
     .each(rowFunc);
 
@@ -309,12 +346,26 @@ function heatmap() {
   .attr("x2", width)
   .attr("stroke", "#fff");
 
-  row.append("text")
+  rowText = row.append("text")
     .attr("x", -6)
     .attr("y", y.rangeBand() / 2)
     .attr("dy", ".32em")
     .attr("text-anchor", "end")
-    .text((d, i) => i + 1);
+    .style("cursor", "pointer")
+    .text((d, i) => rowLabels[i]);
+
+  rowText.on("click", (d, i) => {
+    heatmapData.splice(i, 1);
+    rowLabels.splice(i, 1);
+    updateHeatmap();
+    rowText.text((d, i) => rowLabels[i]);
+    d3.select(`#row-${heatmapData.length}`)
+      .remove();
+    height = height - 40;
+    rect.attr("height", `${height}`);
+    removedRowCount++;
+    legend.transition().duration(1000).attr("transform", `translate(0, ${-40 * removedRowCount})`);
+  });
 
   //column labels
   let column = svg.selectAll(".column")
@@ -327,13 +378,27 @@ function heatmap() {
     .attr("x1", -height)
     .attr("stroke", "#fff");
 
-  column.append("text")
+  columnText = column.append("text")
     .attr("x", 6)
     .attr("y", x.rangeBand() / 2)
     .attr("dy", ".32em")
     // .attr("dx", "1em")
     .attr("text-anchor", "start")
+    .style("cursor", "pointer")
     .text((d, i) =>  acid_labels[i]);
 
+  columnText.on("click", (d, i) => {
+    heatmapData.forEach((d) => {
+      d.splice(i, 1);
+    });
+    acid_labels.splice(i, 1);
+    updateHeatmap();
+    columnText.text((d, i) => acid_labels[i]);
+    d3.selectAll(`#cell-${heatmapData[0].length}`)
+      .remove();
+    width = width - 40;
+    rect.attr("width", `${width}`);
+    removedColumnCount++;
+  });
 
 }
