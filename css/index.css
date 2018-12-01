@@ -11,6 +11,11 @@ div.tooltip {
     pointer-events: none;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 800px 800px
+}
+
 #options-menu {
   padding-top: 15px;
 }
@@ -53,6 +58,7 @@ div.tooltip {
   width: 100%;
   position: fixed;
   border-bottom: 2px solid #4d4d4d;
+  z-index: 10000000
   /*margin-left: 150px;*/
 }
 

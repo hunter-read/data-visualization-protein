@@ -33,7 +33,7 @@ function addBarchartData(clusterSizeDistribution, mutationName) {
 
 
 
-d3v3.json(`data/${pdbid}.json`, (data) => {
+d3.json(`data/${pdbid}.json`, (data) => {
   protein = data;
   wtData = data.basicStats;
   data.mutations.forEach((d) => {
@@ -92,8 +92,8 @@ d3v3.json(`data/${pdbid}.json`, (data) => {
 });
 
 function heatmap() {
-  let width = 800;
-  let height = 40 * heatmapData.length;
+  let width = 700;
+  let height = 35 * heatmapData.length;
   const margin = {
     top: 120,
     right: 0,
@@ -194,7 +194,7 @@ function heatmap() {
     .attr("class", "chartTitle")
     .attr("text-anchor", "middle")
     .attr("transform", `translate(${width / 2}, ${-margin.top / 2 - 20})`)
-    .text("Rigidity of Protein Mutations");
+    .text("Effects of Protein Mutations");
 
 
   const legend = d3v3.select("#heatmap")
@@ -393,10 +393,10 @@ function heatmap() {
     rowText.text((d, i) => rowLabels[i]);
     d3v3.select(`#row-${heatmapData.length}`)
       .remove();
-    height = height - 40;
+    height = height - 35;
     rect.attr("height", `${height}`);
     removedRowCount++;
-    legend.transition().duration(1000).attr("transform", `translate(0, ${-40 * removedRowCount})`);
+    legend.transition().duration(1000).attr("transform", `translate(0, ${-35 * removedRowCount})`);
   });
 
   //column labels
@@ -428,7 +428,7 @@ function heatmap() {
     columnText.text((d, i) => acid_labels[i]);
     d3v3.selectAll(`#cell-${heatmapData[0].length}`)
       .remove();
-    width = width - 40;
+    width = width - 35;
     rect.attr("width", `${width}`);
     removedColumnCount++;
   });
