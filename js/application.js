@@ -138,17 +138,13 @@ function barchart(barchartData, mutationMap, sizesSet) {
 
     var numberOfMutations = barchartData.mutation.length;
 
-
    // iterate through each mutation
-
    // add each mutation to the mutationMap (key: mutationName, value: map of key: size, value: key)
-
    // also adds each size to sizesSet
 
    for (var i = 0; i < numberOfMutations; i++) {
 
        var numSizes = barchartData.sizes[i].length;
-
        var sizeMap = new Map();
 
        // populates size-count mapping for single mutation
@@ -156,30 +152,20 @@ function barchart(barchartData, mutationMap, sizesSet) {
        for (var j = 0; j < numSizes; j++) {
 
            var singleSize = barchartData.sizes[i][j];
-
            var singleCount = barchartData.counts[i][j];
 
-           //sizeMap[singleSize] = singleCount;
-
            sizesSet.add(singleSize);
-
            sizeMap.set(singleSize, singleCount);
 
        }
 
-
-       //mutationMap[barchartData.mutation[i]] = sizeMap;
-
        mutationMap.set(barchartData.mutation[i], sizeMap);
-
 
    }
 
 
    function sortNumber(a,b) {
-
        return a - b;
-
    }
 
 
@@ -194,7 +180,7 @@ function barchart(barchartData, mutationMap, sizesSet) {
 
    W = setArray.length + 1;
 
-   H = barchartData.mutation.length;
+   H = barchartData.mutation.length + 1;
 
    for(i = 0; i < H; i++){
 
@@ -209,20 +195,23 @@ function barchart(barchartData, mutationMap, sizesSet) {
 
     for (var y = 0; y < H; y++) {
 
-        var currentMutation = barchartData.mutation[y];
+        var currentMutation = barchartData.mutation[y - 1];
 
         var currMap = mutationMap.get(currentMutation);
 
         for (var x = 0; x < W; x++) {
-
-            if (x == 0) {
+            if ( x == 0 && y == 0) {
+                matrix[y][x] = "Sizes";
+            }
+            else if (x == 0) {
 
                 matrix[y][x] = currentMutation;
 
+            } else if ( y == 0) {
+                matrix[y][x] = setArray[x - 1];
             } else {
 
-                var sizeNeeded = setArray[x-1];
-
+                var sizeNeeded = setArray[x - 1];
 
                 if (currMap.has(sizeNeeded)) {
 
@@ -242,33 +231,56 @@ function barchart(barchartData, mutationMap, sizesSet) {
 
 
     var chart = bb.generate({
-
      data: {
-
+         x: "Sizes",
        columns: matrix,
-
        type: "bar"
-
      },
 
      bar: {
-
          width: {
-
-             ratio: .6
-
+             ratio: 0.6
          }
-
      },
-
-
+     axis: {
+         x: {
+             type: "category",
+             label: {
+                 text: "Cluster Sizes",
+                 position: "right"
+             }
+         },
+         y: {
+             label: "Cluster Counts"
+         }
+     },
+     legend: {
+     //position: "right"
+   },
+   padding: {
+       bottom: 20,
+       top: 10
+   },
+   zoom: {
+    enabled: {
+      type: "drag"
+    }
+  },
+   tooltip: {
+    //  format: {
+    //     title: function(d) {
+    //       return 'Cluster Size: ' + d;
+    //     }
+    //  },
+     grouped: false
+   },
      bindto: "#barchart"
 
    });
 
    chart.resize({
-       width: 1000,
-       heigth: 1418
+       width: 1025,
+       heigth: 1350
    });
 
 

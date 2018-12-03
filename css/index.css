@@ -11,6 +11,11 @@ div.tooltip {
     pointer-events: none;
 }
 
+#barchart {
+    max-height: 92vh;
+    position: sticky;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 800px 800px
