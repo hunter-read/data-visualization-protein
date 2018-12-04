@@ -264,23 +264,24 @@ function barchart(barchartData, mutationMap, sizesSet) {
    zoom: {
     enabled: {
       type: "drag"
-    }
+    },
+    rescale: true
   },
    tooltip: {
-    //  format: {
-    //     title: function(d) {
-    //       return 'Cluster Size: ' + d;
-    //     }
-    //  },
-     grouped: false
+     format: {
+        title: function(d) {
+          return 'Cluster Size: ' + d;
+        }
+     },
+     grouped: true
    },
      bindto: "#barchart"
 
    });
 
    chart.resize({
-       width: 1025,
-       heigth: 1350
+       width: 700,
+       heigth: 1000
    });
 
 

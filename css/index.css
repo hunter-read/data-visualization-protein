@@ -12,8 +12,9 @@ div.tooltip {
 }
 
 #barchart {
-    max-height: 92vh;
-    position: sticky;
+    top: 120px;
+    max-height: 80vh;
+    position: fixed;
 }
 
 .wrapper {
