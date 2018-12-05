@@ -270,7 +270,7 @@ function barchart(barchartData, mutationMap, sizesSet) {
    tooltip: {
      format: {
         title: function(d) {
-          return 'Cluster Size: ' + d;
+          return 'Cluster Size: ' + matrix[0][d+1];
         }
      },
      grouped: true
